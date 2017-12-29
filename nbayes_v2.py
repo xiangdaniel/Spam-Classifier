@@ -13,7 +13,7 @@ print(label.head())
 print(data.head())
 
 ############################################################
-# 2. Train using model of SKLearn
+# 2. Train using model of Naive Bayes
 # 80% of data for traning dataset and 20% of data for test dataset
 from sklearn.model_selection import train_test_split
 
@@ -26,7 +26,7 @@ print(data_train.shape, data_test.shape, label_train.shape, label_test.shape)
 print(data_train.head())
 print(data_test.head())
 
-# Build class of vectorizer
+# Build the class of vectorizer
 class Vectorizer(object):
     def __init__(self):
         pass
@@ -82,7 +82,7 @@ plt.show()
 word_freq_sort = word_freq.sort_values(by = "occurrences", ascending = False)
 word_freq_sort.head()
 
-# Build class of naive bayes
+# Build the class of naive bayes
 class NBayes(object):
     def __init__(self):
         pass
