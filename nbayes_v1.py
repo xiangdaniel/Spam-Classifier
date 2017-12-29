@@ -59,7 +59,7 @@ label_pred = bayes.predict(data_test_counts)
 print(label_pred)
 
 #######################################################
-# How is this model: validation
+# 3. How is this model: validation
 accuracy = accuracy_score(label_test, label_pred)
 print("accuracy: ", accuracy)
 print(classification_report(label_test, label_pred))
