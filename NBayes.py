@@ -31,9 +31,9 @@ class NBayes(object):
         print (ham_count)
         print (spam_count)
     
-        self.p_spam_vector = np.log(ham_vector_count/ham_total_count)#注意
+        self.p_spam_vector = np.log(ham_vector_count/ham_total_count)
         self.p_spam = np.log(spam_count/num_docs)
-        self.p_ham_vector = np.log(spam_vector_count/spam_total_count)#注意
+        self.p_ham_vector = np.log(spam_vector_count/spam_total_count)
         self.p_ham = np.log(ham_count/num_docs)
         #return p_spam_vector, np.log(spam_count/num_docs), p_ham_vector, np.log(ham_count/num_docs)
     
